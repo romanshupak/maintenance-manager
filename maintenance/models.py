@@ -7,6 +7,9 @@ from django.urls import reverse
 class Department(models.Model):
     name = models.CharField(max_length=255, unique=True)
 
+    class Meta:
+        ordering = ("name",)
+
     def __str__(self):
         return self.name
 
@@ -22,7 +25,7 @@ class Worker(AbstractUser):
     position = models.ForeignKey(
         Position,
         on_delete=models.CASCADE,
-        related_name="workers"
+        related_name="workers",
     )
 
     class Meta:
@@ -30,7 +33,16 @@ class Worker(AbstractUser):
         verbose_name_plural = "workers"
 
     def __str__(self):
-        return f"{self.username} ({self.first_name} {self.last_name} {self.position})"
+        return f"{self.username} ({self.first_name} {self.last_name} {self.position.name})"
+
+    # def save(self, *args, **kwargs):
+    #     # Check if the user is being created for the first time
+    #     if not self.pk:
+    #         # Create a new Position object for the worker
+    #         position = Position.objects.create(name="Default Position")
+    #         # Assign the default position to the worker
+    #         self.position = position
+    #     super().save(*args, **kwargs)
 
     def get_absolute_url(self):
         return reverse("maintenance:worker-detail", kwargs={"pk": self.pk})
