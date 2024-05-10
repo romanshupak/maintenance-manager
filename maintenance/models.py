@@ -26,6 +26,7 @@ class Worker(AbstractUser):
         Position,
         on_delete=models.CASCADE,
         related_name="workers",
+        blank=False,
     )
 
     class Meta:
@@ -34,15 +35,6 @@ class Worker(AbstractUser):
 
     def __str__(self):
         return f"{self.username} ({self.first_name} {self.last_name} {self.position.name})"
-
-    # def save(self, *args, **kwargs):
-    #     # Check if the user is being created for the first time
-    #     if not self.pk:
-    #         # Create a new Position object for the worker
-    #         position = Position.objects.create(name="Default Position")
-    #         # Assign the default position to the worker
-    #         self.position = position
-    #     super().save(*args, **kwargs)
 
     def get_absolute_url(self):
         return reverse("maintenance:worker-detail", kwargs={"pk": self.pk})

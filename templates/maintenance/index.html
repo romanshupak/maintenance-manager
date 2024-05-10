@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}
+  <title>Home page</title>
+{% endblock %}
+{% block content %}
+  <h1>Maintenance home</h1>
+  <p>Welcome to the maintenance manager!</p>
+  <h3>Library content:</h3>
+  <ul>
+    <li>Num departments: {{ num_departments }}</li>
+    <li>Num positions: {{ num_positions }}</li>
+    <li>Num workers: {{ num_workers }}</li>
+    <li>Num completed maintenances: {{ num_completed_maintenances }}</li>
+  </ul>
+{% endblock %}
