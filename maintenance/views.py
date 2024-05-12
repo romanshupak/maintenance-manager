@@ -29,3 +29,15 @@ class PositionListView(generic.ListView):
     model = Position
     template_name = "maintenance/position_list.html"
     context_object_name = "position_list"
+
+
+class WorkerListView(generic.ListView):
+    model = Worker
+    template_name = "maintenance/worker_list.html"
+    context_object_name = "worker_list"
+
+
+class MaintenanceListView(generic.ListView):
+    model = Maintenance
+    template_name = "maintenance/maintenance_list.html"
+    context_object_name = "maintenance_list"

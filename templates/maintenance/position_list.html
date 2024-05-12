@@ -8,5 +8,7 @@
         <li><a href="#">{{ position.name }}</a></li>
       {% endfor %}
     </ul>
+  {% else %}
+    <p>There are no positions in Maintenance manager</p>
   {% endif %}
 {% endblock %}

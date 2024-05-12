@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Worker List</h1>
+  {% if worker_list %}
+    <ul>
+      {% for worker in worker_list %}
+        <li><a href="#">{{ worker.first_name }} {{ worker.last_name }}</a></li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>There are no workers in Maintenance manager</p>
+  {% endif %}
+{% endblock %}

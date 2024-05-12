@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Maintenance List</h1>
+  {% if maintenance_list %}
+    <ul>
+      {% for maintenance in maintenance_list %}
+        <li><a href="#">{{ maintenance.department }} - {{ maintenance.name }}</a></li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>There are no maintenances in Maintenance manager</p>
+  {% endif %}
+{% endblock %}
