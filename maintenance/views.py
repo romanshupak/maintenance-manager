@@ -23,6 +23,7 @@ class DepartmentListView(generic.ListView):
     model = Department
     template_name = "maintenance/department_list.html"
     context_object_name = "department_list"
+    queryset = Department.objects.order_by("name")
 
 
 class PositionListView(generic.ListView):
@@ -35,9 +36,11 @@ class WorkerListView(generic.ListView):
     model = Worker
     template_name = "maintenance/worker_list.html"
     context_object_name = "worker_list"
+    queryset = Worker.objects.select_related("position")
 
 
 class MaintenanceListView(generic.ListView):
     model = Maintenance
     template_name = "maintenance/maintenance_list.html"
     context_object_name = "maintenance_list"
+    queryset = Maintenance.objects.prefetch_related("person_in_charge")
