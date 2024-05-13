@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Maintenance Details</h1>
+  <p><strong>Name:</strong> {{ maintenance_detail_list.name }}</p>
+  <p><strong>Description:</strong> {{ maintenance_detail_list.description }}</p>
+  <p><strong>Deadline:</strong> {{ maintenance_detail_list.deadline }}</p>
+  <p><strong>Status:</strong> {% if maintenance_detail_list.is_completed %}Completed{% else %}Not Completed{% endif %}</p>
+  
+  <h2>Person(s) in Charge:</h2>
+  <ul>
+    {% for person in maintenance_detail_list.person_in_charge.all %}
+      <li>{{ person }}</li>
+    {% endfor %}
+  </ul>
+
+  <a href="{{ maintenance.get_absolute_url }}">Edit Maintenance</a>
+{% endblock %}

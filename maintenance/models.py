@@ -13,12 +13,18 @@ class Department(models.Model):
     def __str__(self):
         return self.name
 
+    def get_absolute_url(self):
+        return reverse("maintenance:department-detail", kwargs={"pk": self.pk})
+
 
 class Position(models.Model):
-    name = models.CharField(max_length=255, unique=True)
+    name = models.CharField(max_length=255, unique=True)   #TODO add field duties, fill in admin panel, in detail list create duties for each rank
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse("maintenance:position-detail", kwargs={"pk": self.pk})
 
 
 class Worker(AbstractUser):
@@ -57,3 +63,6 @@ class Maintenance(models.Model):
 
     class Meta:
         ordering = ("name", )
+
+    def get_absolute_url(self):
+        return reverse("maintenance:maintenance-detail", kwargs={"pk": self.pk})

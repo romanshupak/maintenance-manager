@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Worker Details</h1>
+  <p><strong>Username:</strong> {{ worker_detail_list.username }}</p>
+  <p><strong>Name:</strong> {{ worker_detail_list.get_full_name }}</p>
+  <p><strong>Position:</strong> {{ worker_detail_list.position.name }}</p>
+
+  <h2>Tasks</h2>
+  {% if worker_detail_list.maintenances.all %}
+    <ul>
+      {% for maintenance in worker_detail_list.maintenances.all %}
+        <li>{{ maintenance.name }} - {% if maintenance.is_completed %}Completed{% else %}Not Completed{% endif %}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>This worker has no tasks.</p>
+  {% endif %}
+{% endblock %}

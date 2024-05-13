@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Position Details</h1>
+  <ul>
+    {% for position in position_detail_list %}
+      <li><strong>Rank:</strong> {{ position.name }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
