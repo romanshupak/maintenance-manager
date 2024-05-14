@@ -42,6 +42,7 @@ class PositionDetailView(generic.ListView):
     model = Position
     template_name = "maintenance/position_detail.html"
     context_object_name = "position_detail_list"
+    paginate_by = 3
 
 
 class WorkerListView(generic.ListView):
