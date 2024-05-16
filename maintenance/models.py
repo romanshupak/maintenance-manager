@@ -62,7 +62,7 @@ class Maintenance(models.Model):
         related_name="maintenances"
     )
 
-    class Meta:
+    class Meta: 
         ordering = ("name", )
 
     def get_absolute_url(self):

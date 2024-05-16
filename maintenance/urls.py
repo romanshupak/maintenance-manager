@@ -10,6 +10,9 @@ from maintenance.views import (
     PositionDetailView,
     WorkerDetailView,
     MaintenanceDetailView,
+    MaintenanceCreateView,
+    MaintenanceUpdateView,
+    MaintenanceDeleteView,
 )
 
 urlpatterns = [
@@ -22,6 +25,9 @@ urlpatterns = [
     path("workers/<int:pk>", WorkerDetailView.as_view(), name="worker-detail"),
     path("maintenance/", MaintenanceListView.as_view(), name="maintenance-list"),
     path("maintenance/<int:pk>", MaintenanceDetailView.as_view(), name="maintenance-detail"),
+    path("maintenance/create", MaintenanceCreateView.as_view(), name="maintenance-create"),
+    path("maintenance/update/<int:pk>", MaintenanceUpdateView.as_view(), name="maintenance-update"),
+    path("maintenance/delete/<int:pk>", MaintenanceDeleteView.as_view(), name="maintenance-delete"),
 ]
 
 app_name = "maintenance"

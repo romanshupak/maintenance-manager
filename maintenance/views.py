@@ -2,6 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
+from django.urls import reverse_lazy
 from django.views import generic
 
 from maintenance.models import Department, Position, Worker, Maintenance
@@ -75,7 +76,28 @@ class MaintenanceListView(LoginRequiredMixin, generic.ListView):
     )
 
 
+class MaintenanceCreateView(LoginRequiredMixin, generic.CreateView):
+    model = Maintenance
+    fields = "__all__"
+    success_url = reverse_lazy("maintenance:maintenance-list")
+    template_name = "maintenance/maintenance_form.html"
+
+
 class MaintenanceDetailView(LoginRequiredMixin, generic.DetailView):
     model = Maintenance
     template_name = "maintenance/maintenance_detail.html"
     context_object_name = "maintenance_detail_list"
+
+
+class MaintenanceUpdateView(LoginRequiredMixin, generic.UpdateView):
+    model = Maintenance
+    fields = "__all__"
+    success_url = reverse_lazy("maintenance:maintenance-list")
+    template_name = "maintenance/maintenance_form.html"
+
+
+class MaintenanceDeleteView(LoginRequiredMixin, generic.DeleteView):
+    model = Maintenance
+    template_name = "maintenance/maintenance_form_confirm_delete.html"
+    success_url = reverse_lazy("maintenance:maintenance-list")
+

@@ -1,18 +1,38 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h1>Maintenance Details</h1>
-  <p><strong>Name:</strong> {{ maintenance_detail_list.name }}</p>
-  <p><strong>Description:</strong> {{ maintenance_detail_list.description }}</p>
-  <p><strong>Deadline:</strong> {{ maintenance_detail_list.deadline }}</p>
-  <p><strong>Status:</strong> {% if maintenance_detail_list.is_completed %}Completed{% else %}Not Completed{% endif %}</p>
-  
-  <h2>Person(s) in Charge:</h2>
-  <ul>
-    {% for person in maintenance_detail_list.person_in_charge.all %}
-      <li>{{ person }}</li>
-    {% endfor %}
-  </ul>
-{% endblock %}
+    <h1>Maintenance Details</h1>
 
-<p>lorem 50</p>
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Deadline</th>
+            <th>Status</th>
+            <th>Department</th>
+            <th>Person(s) in Charge</th>
+            <th>Actions</th>
+        </tr>
+
+        <tr>
+            <td>{{ maintenance_detail_list.id }}</td>
+            <td>{{ maintenance_detail_list.name }}</td>
+            <td>{{ maintenance_detail_list.description }}</td>
+            <td>{{ maintenance_detail_list.deadline }}</td>
+            <td>{% if maintenance_detail_list.is_completed %}Completed{% else %}Not Completed{% endif %}</td>
+            <td>{{ maintenance_detail_list.department }}</td>
+            <td>
+                <ul>
+                    {% for person in maintenance_detail_list.person_in_charge.all %}
+                        <li>{{ person }}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td>
+                <a href="{% url 'maintenance:maintenance-update' pk=maintenance_detail_list.id %}">UPDATE</a>
+                <a href="{% url 'maintenance:maintenance-delete' pk=maintenance_detail_list.id %}">DELETE</a>
+            </td>
+        </tr>
+    </table>
+{% endblock %}
