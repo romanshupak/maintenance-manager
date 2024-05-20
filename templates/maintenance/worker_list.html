@@ -1,14 +1,88 @@
-{% extends "base.html" %}
+{#{% extends "base.html" %}#}
+{##}
+{#{% block content %}#}
+{#  <h1>Worker List</h1>#}
+{#  {% if worker_list %}#}
+{#    <ul>#}
+{#      {% for worker in worker_list %}#}
+{#        <li><a href="{{ worker.get_absolute_url }}">{{ worker.first_name }} {{ worker.last_name }}</a></li>#}
+{#      {% endfor %}#}
+{#    </ul>#}
+{#  {% else %}#}
+{#    <p>There are no workers in Maintenance manager</p>#}
+{#  {% endif %}#}
+{#{% endblock %}#}
+
+{% extends 'layouts/base_background.html' %}
+{% load static %}
+
+{% block title %} Material Kit 2 by Creative Tim {% endblock title %}
+{% block body %} class="blog-author bg-gray-200" {% endblock body %}
+
+{% block header %}
+{% include 'includes/navigation.html' %}
+{% endblock header %}
 
 {% block content %}
-  <h1>Worker List</h1>
-  {% if worker_list %}
-    <ul>
-      {% for worker in worker_list %}
-        <li><a href="{{ worker.get_absolute_url }}">{{ worker.first_name }} {{ worker.last_name }}</a></li>
-      {% endfor %}
-    </ul>
-  {% else %}
-    <p>There are no workers in Maintenance manager</p>
-  {% endif %}
-{% endblock %}
+  <!-- -------- START HEADER 4 w/ search book a ticket form ------- -->
+    <header class="bg-gradient-dark">
+    <div class="page-header min-vh-75" style="background-image: url('{% static 'img/city-profile.jpg' %}');">
+      <span class="mask bg-gradient-dark opacity-6"></span>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mx-auto my-auto">
+            <h1 class="text-white">Empowering excellence in every department</h1>
+            <p class="lead mb-4 text-white opacity-8">Excellence trough teamwork</p>
+            <h6 class="text-white mb-2 mt-5">Find us on</h6>
+            <div class="d-flex justify-content-center">
+              <a href="javascript:;"><i class="fab fa-facebook text-lg text-white me-4"></i></a>
+              <a href="javascript:;"><i class="fab fa-instagram text-lg text-white me-4"></i></a>
+              <a href="javascript:;"><i class="fab fa-twitter text-lg text-white me-4"></i></a>
+              <a href="javascript:;"><i class="fab fa-google-plus text-lg text-white"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- -------- END HEADER 4 w/ search book a ticket form ------- -->
+ <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
+  <section class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="mb-5">Our Workers</h3>
+        </div>
+      </div>
+      <div class="row">
+        {% if worker_list %}
+          {% for worker in worker_list %}
+            <div class="col-lg-3 col-sm-6">
+              <div class="card card-plain">
+                <div class="card-body px-0">
+                  <h5>
+                    <a href="{{ worker.get_absolute_url }}" class="text-dark font-weight-bold">{{ worker.first_name }} {{ worker.last_name }}</a>
+                  </h5>
+                  <p>
+                    {{ worker.position.name }}
+                  </p>
+                  <a href="{{ worker.get_absolute_url }}" class="text-info text-sm icon-move-right">Read More
+                    <i class="fas fa-arrow-right text-xs ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        {% else %}
+          <p>There are no workers in Maintenance manager</p>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+</div>
+
+{% endblock content %}
+
+{% block footer %}
+{% include 'includes/footer_background.html' %}
+{% endblock footer %}
