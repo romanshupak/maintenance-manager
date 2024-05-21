@@ -5,6 +5,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import generic
 
+from maintenance.forms import MaintenanceForm
 from maintenance.models import Department, Position, Worker, Maintenance
 
 
@@ -80,7 +81,8 @@ class MaintenanceCreateView(LoginRequiredMixin, generic.CreateView):
     model = Maintenance
     fields = "__all__"
     success_url = reverse_lazy("maintenance:maintenance-list")
-    template_name = "maintenance/maintenance_form.html"
+    template_name = "maintenance/maintenance_create.html"
+
 
 
 class MaintenanceDetailView(LoginRequiredMixin, generic.DetailView):
@@ -94,6 +96,7 @@ class MaintenanceUpdateView(LoginRequiredMixin, generic.UpdateView):
     fields = "__all__"
     success_url = reverse_lazy("maintenance:maintenance-list")
     template_name = "maintenance/maintenance_form.html"
+
 
 
 class MaintenanceDeleteView(LoginRequiredMixin, generic.DeleteView):

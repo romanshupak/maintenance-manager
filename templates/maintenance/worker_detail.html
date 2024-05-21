@@ -1,4 +1,4 @@
-{#{% extends "base.html" %}#}
+  {#{% extends "base.html" %}#}
 {##}
 {#{% block content %}#}
 {#  <h1>Worker Details</h1>#}
@@ -145,7 +145,7 @@
           <div class="col-lg-6 mx-auto">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">{{ worker_detail_list.username }}</h5>
+                <p class="card-text"><strong>Username:</strong> {{ worker_detail_list.username }}</p>
                 <p class="card-text"><strong>Full Name:</strong> {{ worker_detail_list.get_full_name }}</p>
                 <p class="card-text"><strong>Position:</strong> {{ worker_detail_list.position.name }}</p>
               </div>
