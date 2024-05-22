@@ -1,0 +1,96 @@
+{% extends 'layouts/base_background.html' %}
+{% load static %}
+
+{% block title %} Update Maintenance {% endblock title %}
+{% block body %} class="blog-author bg-gray-200" {% endblock body %}
+
+{% block header %}
+{% include 'includes/navigation.html' %}
+{% endblock header %}
+
+{% block content %}
+  <!-- -------- START HEADER 4 w/ search book a ticket form ------- -->
+  <header class="bg-gradient-dark">
+    <div class="page-header min-vh-75" style="background-image: url('{% static 'img/city-profile.jpg' %}');">
+      <span class="mask bg-gradient-dark opacity-6"></span>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mx-auto my-auto">
+            <h1 class="text-white">Empowering excellence in every department</h1>
+            <p class="lead mb-4 text-white opacity-8">Excellence through teamwork</p>
+            <!-- Form for creating new maintenance under the phrase -->
+            <div class="row mt-4 justify-content-center">
+              <div class="col-lg-6">
+              </div>
+            </div>
+            <h6 class="text-white mb-2 mt-5">Find us on</h6>
+            <div class="d-flex justify-content-center">
+              <a href="javascript:;"><i class="fab fa-facebook text-lg text-white me-4"></i></a>
+              <a href="javascript:;"><i class="fab fa-instagram text-lg text-white me-4"></i></a>
+              <a href="javascript:;"><i class="fab fa-twitter text-lg text-white me-4"></i></a>
+              <a href="javascript:;"><i class="fab fa-google-plus text-lg text-white"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- -------- END HEADER 4 w/ search book a ticket form ------- -->
+
+  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
+    <section class="py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="mb-5">Update Maintenance</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form method="post" action="{% url 'maintenance:maintenance-update' pk=maintenance.pk %}">
+              {% csrf_token %}
+              <div class="form-group">
+                  <div style="margin-bottom: 1em;">
+                      <label for="{{ form.name.id_for_label }}" style="font-size: 1.0rem;">{{ form.name.label }}</label>
+                      {{ form.name }}
+                      {{ form.name.errors }}
+                  </div>
+                  <div style="margin-bottom: 1em;">
+                      <label for="{{ form.description.id_for_label }}" style="font-size: 1.0rem;">{{ form.description.label }}</label>
+                      {{ form.description }}
+                      {{ form.description.errors }}
+                  </div>
+                  <div style="margin-bottom: 1em;">
+                      <label for="{{ form.deadline.id_for_label }}" style="font-size: 1.0rem;">{{ form.deadline.label }}</label>
+                      {{ form.deadline }}
+                      {{ form.deadline.errors }}
+                  </div>
+                  <div style="margin-bottom: 1em;">
+                      <label for="{{ form.is_completed.id_for_label }}" style="font-size: 1.0rem;">{{ form.is_completed.label }}</label>
+                      {{ form.is_completed }}
+                      {{ form.is_completed.errors }}
+                  </div>
+                  <div style="margin-bottom: 1em;">
+                      <label for="{{ form.department.id_for_label }}" style="font-size: 1.0rem;">{{ form.department.label }}</label>
+                      {{ form.department }}
+                      {{ form.department.errors }}
+                  </div>
+                  <div style="margin-bottom: 1em;">
+                      <label for="{{ form.person_in_charge.id_for_label }}" style="font-size: 1.0rem;">{{ form.person_in_charge.label }}</label>
+                      {{ form.person_in_charge }}
+                      {{ form.person_in_charge.errors }}
+                  </div>
+              </div>
+              <button type="submit" class="btn bg-gradient-primary">Update Maintenance</button>
+              <a href="{% url 'maintenance:maintenance-list' %}" class="btn btn-secondary" style="margin-left: 250px;">Back to Maintenance List</a>
+          </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+{% endblock content %}
+
+{% block footer %}
+{% include 'includes/footer_background.html' %}
+{% endblock footer %}

@@ -95,8 +95,13 @@ class MaintenanceUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Maintenance
     # fields = "__all__"
     success_url = reverse_lazy("maintenance:maintenance-list")
-    template_name = "maintenance/maintenance_form.html"
+    template_name = "maintenance/maintenance_update.html"
     form_class = MaintenanceForm
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['maintenance'] = self.get_object()
+        return context
 
 
 class MaintenanceDeleteView(LoginRequiredMixin, generic.DeleteView):
