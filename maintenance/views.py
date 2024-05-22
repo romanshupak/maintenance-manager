@@ -79,10 +79,10 @@ class MaintenanceListView(LoginRequiredMixin, generic.ListView):
 
 class MaintenanceCreateView(LoginRequiredMixin, generic.CreateView):
     model = Maintenance
-    fields = "__all__"
+    # fields = "__all__"
     success_url = reverse_lazy("maintenance:maintenance-list")
     template_name = "maintenance/maintenance_create.html"
-
+    form_class = MaintenanceForm
 
 
 class MaintenanceDetailView(LoginRequiredMixin, generic.DetailView):
@@ -93,10 +93,10 @@ class MaintenanceDetailView(LoginRequiredMixin, generic.DetailView):
 
 class MaintenanceUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Maintenance
-    fields = "__all__"
+    # fields = "__all__"
     success_url = reverse_lazy("maintenance:maintenance-list")
     template_name = "maintenance/maintenance_form.html"
-
+    form_class = MaintenanceForm
 
 
 class MaintenanceDeleteView(LoginRequiredMixin, generic.DeleteView):
