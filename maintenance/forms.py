@@ -14,3 +14,16 @@ class MaintenanceForm(forms.ModelForm):
         widgets = {
             "person_in_charge": forms.CheckboxSelectMultiple,
         }
+
+
+class MaintenanceSearchForm(forms.Form):
+    name = forms.CharField(
+        max_length=255, required=False,
+        label="",
+        widget=forms.TextInput(
+            attrs={
+                "placeholder": "Search for maintenance"
+            }
+        )
+    )
+
