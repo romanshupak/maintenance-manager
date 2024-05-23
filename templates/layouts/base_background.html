@@ -16,8 +16,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/apple-icon.png' %}">
-<link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+<link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/logos/gray-logos/icons8-request-service-50 (1).png' %}">
+<link rel="icon" type="image/png" href="{% static 'img/logos/gray-logos/icons8-request-service-50 (1).png' %}">
 <title>
   {% block title %}{% endblock title %}
 </title>
@@ -43,9 +43,13 @@
   {% endblock header %}
 
   {% block content %}{% endblock content %}
+  
+  {% block pagination %}
+    {% include "includes/pagination.html" %}
+  {% endblock pagination %}
 
   {% block footer %}
-  
+
     {% include 'includes/footer_background.html' %}
 
   {% endblock footer %}

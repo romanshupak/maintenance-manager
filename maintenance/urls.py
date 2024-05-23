@@ -12,11 +12,12 @@ from maintenance.views import (
     MaintenanceDetailView,
     MaintenanceCreateView,
     MaintenanceUpdateView,
-    MaintenanceDeleteView,
+    MaintenanceDeleteView, SolasView,
 )
 
 urlpatterns = [
     path("", index, name="index"),
+    path("solas/", SolasView.as_view(), name="solas"),
     path("departments/", DepartmentListView.as_view(), name="department-list"),
     path("departments/<int:pk>", DepartmentDetailView.as_view(), name="department-detail"),
     path("positions/", PositionListView.as_view(), name="position-list"),

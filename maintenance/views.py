@@ -4,6 +4,7 @@ from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import generic
+from django.views.generic import TemplateView
 
 from maintenance.forms import MaintenanceForm, MaintenanceSearchForm
 from maintenance.models import Department, Position, Worker, Maintenance
@@ -25,6 +26,10 @@ def index(request: HttpRequest) -> HttpResponse:
         "num_visits": request.session["num_visits"]
     }
     return render(request, "maintenance/index.html", context=context)
+
+
+class SolasView(TemplateView):
+    template_name = "maintenance/solas.html"
 
 
 class DepartmentListView(LoginRequiredMixin, generic.ListView):
@@ -50,7 +55,6 @@ class PositionDetailView(LoginRequiredMixin, generic.ListView):
     model = Position
     template_name = "maintenance/position_detail.html"
     context_object_name = "position_detail_list"
-    paginate_by = 3
 
 
 class WorkerListView(LoginRequiredMixin, generic.ListView):
@@ -75,6 +79,7 @@ class MaintenanceListView(LoginRequiredMixin, generic.ListView):
         .select_related("department")
         .prefetch_related("person_in_charge")
     )
+    paginate_by = 4
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super(MaintenanceListView, self).get_context_data(**kwargs)
@@ -93,7 +98,6 @@ class MaintenanceListView(LoginRequiredMixin, generic.ListView):
 
 class MaintenanceCreateView(LoginRequiredMixin, generic.CreateView):
     model = Maintenance
-    # fields = "__all__"
     success_url = reverse_lazy("maintenance:maintenance-list")
     template_name = "maintenance/maintenance_create.html"
     form_class = MaintenanceForm

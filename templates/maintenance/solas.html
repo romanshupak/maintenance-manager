@@ -1,0 +1,56 @@
+{% extends 'layouts/base_background.html' %}
+{% load static %}
+
+{% block title %}Documentation{% endblock title %}
+{% block body %} class="blog-author bg-gray-200" {% endblock body %}
+
+{% block header %}
+{% include 'includes/navigation.html' %}
+{% endblock header %}
+
+{% block content %}
+
+  <!-- -------- START HEADER 4 w/ search book a ticket form ------- -->
+  <header class="bg-gradient-dark">
+    <div class="page-header min-vh-75" style="background-image: url('{% static 'img/shapes/solas.jpg' %}');">
+      <span class="mask bg-gradient-dark opacity-6"></span>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mx-auto my-auto">
+            <h1 class="text-white">Empowering excellence in every department</h1>
+            <p class="lead mb-4 text-white opacity-8">Excellence through teamwork</p>
+            <h6 class="text-white mb-2 mt-5">Find us on</h6>
+            <div class="d-flex justify-content-center">
+              <a href="https://www.facebook.com/profile.php?id=100005855806696" target="_blank"><i class="fab fa-facebook text-lg text-white me-4"></i></a>
+              <a href="https://github.com/romanshupak" target="_blank"><i class="fab fa-github text-lg text-white me-4"></i></a>
+              <a href="https://t.me/romanshu" target="_blank"><i class="fab fa-telegram text-lg text-white"></i></a>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- -------- END HEADER 4 w/ search book a ticket form ------- -->
+
+  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
+    <section class="py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="mb-5">Safety at Sea</h3>
+            <p class="lead">
+              The International Convention for the Safety of Life at Sea (SOLAS) is an international maritime treaty which sets out minimum safety standards in the construction, equipment and operation of merchant ships. The International Maritime Organization convention requires signatory flag states to ensure that ships flagged by them comply with at least these standards.
+              Initially prompted by the sinking of the Titanic, the current version of SOLAS is the 1974 version, known as SOLAS 1974, which came into force on 25 May 1980,[1] and has been amended several times. As of April 2022, SOLAS 1974 has 167 contracting states,[1] which flag about 99% of merchant ships around the world in terms of gross tonnage.[1]
+              SOLAS in its successive forms is generally regarded as the most important of all international treaties concerning the safety of merchant ships.[
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+{% endblock content %}
+
+{% block footer %}
+{% include 'includes/footer_background.html' %}
+{% endblock footer %}
