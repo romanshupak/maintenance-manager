@@ -32,6 +32,18 @@ class SolasView(TemplateView):
     template_name = "maintenance/solas.html"
 
 
+class MarpolView(TemplateView):
+    template_name = "maintenance/marpol.html"
+
+
+class MlcView(TemplateView):
+    template_name = "maintenance/mlc.html"
+
+
+class ColregView(TemplateView):
+    template_name = "maintenance/colreg.html"
+
+
 class DepartmentListView(LoginRequiredMixin, generic.ListView):
     model = Department
     template_name = "maintenance/department_list.html"
@@ -39,10 +51,10 @@ class DepartmentListView(LoginRequiredMixin, generic.ListView):
     queryset = Department.objects.order_by("name")
 
 
-class DepartmentDetailView(LoginRequiredMixin, generic.DetailView):
-    model = Department
-    template_name = "maintenance/department_detail.html"
-    context_object_name = "department_detail_list"
+# class DepartmentDetailView(LoginRequiredMixin, generic.DetailView):
+#     model = Department
+#     template_name = "maintenance/department_detail.html"
+#     context_object_name = "department_detail_list"
 
 
 class PositionListView(LoginRequiredMixin, generic.ListView):
