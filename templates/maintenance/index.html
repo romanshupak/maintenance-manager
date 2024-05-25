@@ -7,13 +7,14 @@
 
 {% block content %}
 <header class="header-2">
-  <div class="page-header min-vh-75 relative" style="background-image: url('{% static 'img/bg2.jpg' %}')">
+  <div class="page-header min-vh-75 relative" style="background-image: url('{% static 'img/shapes/index1.jpg' %}')">
     <span class="mask bg-gradient-primary opacity-2"></span>
     <div class="container">
       <div class="row">
         <div class="col-lg-7 text-center mx-auto">
-          <h1 class="text-white pt-4 mt-n5">Material</h1>
-          <p class="lead text-white mt-3">Free & Open Source Web UI Kit built over Bootstrap 5. <br/> Join over 1.6 million developers around the world. </p>
+          <h1 class="text-white pt-4 mt-n5">Maintenance Manager</h1>
+          <p class="lead text-white mt-3">Ensuring Safe Seas with Reliable Onboard Maintenance. <br/>
+            "Keep Your Vessel Shipshape!" </p>
         </div>
       </div>
     </div>
@@ -28,7 +29,7 @@
           <div class="row">
             <div class="col-md-4 position-relative">
               <div class="p-3 text-center">
-                <h1 class="text-gradient text-primary"><span id="state1" countTo="70">4</span>+</h1>
+                <h1 class="text-gradient text-primary"><span id="state1" countTo="70">{{ num_departments }}</span></h1>
                 <h5 class="mt-3">Departments</h5>
                 <p class="text-sm font-weight-normal">Empowering excellence in every department</p>
                 <a href="{% url 'maintenance:department-list' %}" class="btn btn-primary mt-3">Go to Department List</a>
@@ -37,27 +38,36 @@
             </div>
             <div class="col-md-4 position-relative">
               <div class="p-3 text-center">
-                <h1 class="text-gradient text-primary"> <span id="state2" countTo="15">6</span>+</h1>
+                <h1 class="text-gradient text-primary"> <span id="state2" countTo="15">{{ num_positions }}</span></h1>
                 <h5 class="mt-3">Positions</h5>
-                <p class="text-sm font-weight-normal">Mix the sections, change the colors and unleash your creativity</p>
+                <p class="text-sm font-weight-normal">Vessel ranks allocate responsibilities for efficient operation and safety</p>
                 <a href="{% url 'maintenance:position-list' %}" class="btn btn-primary mt-3">Go to Position List</a>
               </div>
               <hr class="vertical dark">
             </div>
             <div class="col-md-4">
               <div class="p-3 text-center">
-                <h1 class="text-gradient text-primary" id="state3" countTo="4">6</h1>
+                <h1 class="text-gradient text-primary" id="state3" countTo="4">{{ num_workers }}</h1>
                 <h5 class="mt-3">Workers</h5>
-                <p class="text-sm font-weight-normal">Save 3-4 weeks of work when you use our pre-made pages for your website</p>
+                <p class="text-sm font-weight-normal">Workers perform vital roles ensuring vessel operations and safety</p>
                 <a href="{% url 'maintenance:worker-list' %}" class="btn btn-primary mt-3">Go to Worker List</a>
               </div>
             </div>
             <div class="col-md-4">
               <div class="p-3 text-center">
-                <h1 class="text-gradient text-primary" id="state4" countTo="4">8</h1>
-                <h5 class="mt-3">Maintenances</h5>
-                <p class="text-sm font-weight-normal">Save 3-4 weeks of work when you use our pre-made pages for your website</p>
+                <h1 class="text-gradient text-primary" id="state4" countTo="4">{{ num_completed_maintenances }}</h1>
+                <h5 class="mt-3">Completed Maintenances</h5>
+                <p class="text-sm font-weight-normal">Completed vessel maintenance ensures optimal performance and safety</p>
                 <a href="{% url 'maintenance:maintenance-list' %}" class="btn btn-primary mt-3">Go to Maintenance List</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 text-center">
+                <h1 class="text-gradient text-primary" id="state4" countTo="4">{{ num_not_completed_maintenances }}</h1>
+                <h5 class="mt-3">Not Completed Maintenances</h5>
+                <p class="text-sm font-weight-normal">Incomplete vessel maintenance poses risks to performance and safety</p>
+                <a href="{% url 'maintenance:maintenance-list' %}" class="btn btn-primary mt-3">Go to Maintenance
+                  List</a>
               </div>
             </div>
           </div>

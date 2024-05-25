@@ -44,27 +44,61 @@
 <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
   <section class="py-3">
     <div class="container">
+      <!-- Completed Maintenance Section -->
       <div class="row">
         <div class="col-lg-6">
-          <h3 class="mb-5">Maintenance List</h3>
+          <h3 class="mb-5">Completed Maintenance</h3>
         </div>
       </div>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         {% for maintenance in maintenance_list %}
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">{{ maintenance.department }}</h5>
-                <p class="card-text">{{ maintenance.name }}</p>
-                <a href="{{ maintenance.get_absolute_url }}" class="btn btn-primary">View Details</a>
+          {% if maintenance.is_completed %}
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">{{ maintenance.department }}</h5>
+                    <span class="badge bg-success">Completed</span>
+                  </div>
+                  <p class="card-text mt-2">{{ maintenance.name }}</p>
+                  <a href="{{ maintenance.get_absolute_url }}" class="btn btn-primary">View Details</a>
+                </div>
               </div>
             </div>
-          </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <!-- Not Completed Maintenance Section -->
+      <div class="row mt-5">
+        <div class="col-lg-6">
+          <h3 class="mb-5">Not Completed Maintenance</h3>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for maintenance in maintenance_list %}
+          {% if not maintenance.is_completed %}
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">{{ maintenance.department }}</h5>
+                    <span class="badge bg-danger">Not Completed</span>
+                  </div>
+                  <p class="card-text mt-2">{{ maintenance.name }}</p>
+                  <a href="{{ maintenance.get_absolute_url }}" class="btn btn-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+          {% endif %}
         {% endfor %}
       </div>
     </div>
   </section>
 </div>
+
+
+  
+  <!-- -------- Pagination ------- -->
 
 {% if maintenance_list.has_other_pages %}
   <div class="pagination">

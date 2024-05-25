@@ -16,6 +16,7 @@ def index(request: HttpRequest) -> HttpResponse:
     num_positions = Position.objects.count()
     num_workers = Worker.objects.count()
     num_completed_maintenances = Maintenance.objects.filter(is_completed=True).count()
+    num_not_completed_maintenances = Maintenance.objects.filter(is_completed=False).count()
     num_visits = request.session.get("num_visits", 0)
     request.session["num_visits"] = num_visits + 1
     context = {
@@ -23,6 +24,7 @@ def index(request: HttpRequest) -> HttpResponse:
         "num_positions": num_positions,
         "num_workers": num_workers,
         "num_completed_maintenances": num_completed_maintenances,
+        "num_not_completed_maintenances": num_not_completed_maintenances,
         "num_visits": request.session["num_visits"]
     }
     return render(request, "maintenance/index.html", context=context)
@@ -63,10 +65,10 @@ class PositionListView(LoginRequiredMixin, generic.ListView):
     context_object_name = "position_list"
 
 
-class PositionDetailView(LoginRequiredMixin, generic.ListView):
-    model = Position
-    template_name = "maintenance/position_detail.html"
-    context_object_name = "position_detail_list"
+# class PositionDetailView(LoginRequiredMixin, generic.ListView):
+#     model = Position
+#     template_name = "maintenance/position_detail.html"
+#     context_object_name = "position_detail_list"
 
 
 class WorkerListView(LoginRequiredMixin, generic.ListView):
