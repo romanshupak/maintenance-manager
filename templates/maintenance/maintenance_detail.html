@@ -1,43 +1,3 @@
-{#{% extends "base.html" %}#}
-{##}
-{#{% block content %}#}
-{#    <h1>Maintenance Details</h1>#}
-{##}
-{#    <table class="table">#}
-{#        <tr>#}
-{#            <th>ID</th>#}
-{#            <th>Name</th>#}
-{#            <th>Description</th>#}
-{#            <th>Deadline</th>#}
-{#            <th>Status</th>#}
-{#            <th>Department</th>#}
-{#            <th>Person(s) in Charge</th>#}
-{#            <th>Actions</th>#}
-{#        </tr>#}
-{##}
-{#        <tr>#}
-{#            <td>{{ maintenance_detail_list.id }}</td>#}
-{#            <td>{{ maintenance_detail_list.name }}</td>#}
-{#            <td>{{ maintenance_detail_list.description }}</td>#}
-{#            <td>{{ maintenance_detail_list.deadline }}</td>#}
-{#            <td>{% if maintenance_detail_list.is_completed %}Completed{% else %}Not Completed{% endif %}</td>#}
-{#            <td>{{ maintenance_detail_list.department }}</td>#}
-{#            <td>#}
-{#                <ul>#}
-{#                    {% for person in maintenance_detail_list.person_in_charge.all %}#}
-{#                        <li>{{ person }}</li>#}
-{#                    {% endfor %}#}
-{#                </ul>#}
-{#            </td>#}
-{#            <td>#}
-{#                <a href="{% url 'maintenance:maintenance-update' pk=maintenance_detail_list.id %}">UPDATE</a>#}
-{#                <a href="{% url 'maintenance:maintenance-delete' pk=maintenance_detail_list.id %}">DELETE</a>#}
-{#            </td>#}
-{#        </tr>#}
-{#    </table>#}
-{#{% endblock %}#}
-
-
 {% extends 'layouts/base_background.html' %}
 {% load static %}
 
@@ -61,9 +21,14 @@
             <div class="row mt-4 justify-content-center"></div>
             <h6 class="text-white mb-2 mt-5">Find us on</h6>
             <div class="d-flex justify-content-center">
-              <a href="https://www.facebook.com/profile.php?id=100005855806696" target="_blank"><i class="fab fa-facebook text-lg text-white me-4"></i></a>
-              <a href="https://github.com/romanshupak" target="_blank"><i class="fab fa-github text-lg text-white me-4"></i></a>
-              <a href="https://t.me/romanshu" target="_blank"><i class="fab fa-telegram text-lg text-white"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100005855806696" target="_blank"><i
+                  class="fab fa-facebook text-lg text-white me-4"></i></a>
+              <a href="https://github.com/romanshupak" target="_blank"><i
+                  class="fab fa-github text-lg text-white me-4"></i></a>
+              <a href="https://t.me/romanshu" target="_blank"><i
+                  class="fab fa-telegram text-lg text-white me-4"></i></a>
+              <a href="https://www.instagram.com/not_only_an_athlete" target="_blank"><i
+                  class="fab fa-instagram text-lg text-white me-4"></i></a>
             </div>
           </div>
         </div>

@@ -1,19 +1,3 @@
-{#{% extends 'layouts/base_background.html' %}#}
-{##}
-{#{% block content %}#}
-{#  <h1>Department List</h1>#}
-{#  #}
-{#  {% if department_list %}#}
-{#    <ul>#}
-{#    {% for department in department_list %}#}
-{#    <li><a href="{{ department.get_absolute_url }}">{{ department.name }}</a></li>#}
-{#    {% endfor %}#}
-{#    </ul>#}
-{#  {% else %}#}
-{#    <p>There are no departments in Maintenance manager</p>#}
-{#  {% endif %}#}
-{#{% endblock %}#}
-
 {% extends 'layouts/base_background.html' %}
 {% load static %}
 
@@ -39,10 +23,16 @@
             <p class="lead mb-4 text-white opacity-8">Excellence trough teamwork</p>
             <h6 class="text-white mb-2 mt-5">Find us on</h6>
             <div class="d-flex justify-content-center">
-              <a href="https://www.facebook.com/profile.php?id=100005855806696" target="_blank"><i class="fab fa-facebook text-lg text-white me-4"></i></a>
-              <a href="https://github.com/romanshupak" target="_blank"><i class="fab fa-github text-lg text-white me-4"></i></a>
-              <a href="https://t.me/romanshu" target="_blank"><i class="fab fa-telegram text-lg text-white"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100005855806696" target="_blank"><i
+                  class="fab fa-facebook text-lg text-white me-4"></i></a>
+              <a href="https://github.com/romanshupak" target="_blank"><i
+                  class="fab fa-github text-lg text-white me-4"></i></a>
+              <a href="https://t.me/romanshu" target="_blank"><i
+                  class="fab fa-telegram text-lg text-white me-4"></i></a>
+              <a href="https://www.instagram.com/not_only_an_athlete" target="_blank"><i
+                  class="fab fa-instagram text-lg text-white me-4"></i></a>
             </div>
+
           </div>
         </div>
       </div>
@@ -109,8 +99,8 @@
       </div>
     </section>
     <!-- END Section with four info areas left & one card right with image and waves -->
-    <!-- -------- START Features w/ pattern background & stats & rocket -------- -->
-   <section class="pb-5 position-relative bg-gradient-dark mx-n3">
+<!-- -------- START Features w/ pattern background & stats & rocket -------- -->
+<section class="pb-5 position-relative bg-gradient-dark mx-n3">
   <div class="container">
     <div class="row">
       <div class="col-md-8 text-start mb-5 mt-5">
@@ -125,7 +115,7 @@
             <div class="col-lg-4 col-md-6 col-12 mt-n5">
               <a href="javascript:;">
                 <div class="p-3 pe-md-0">
-                  <img class="w-100 border-radius-md shadow-lg" src="{% static 'img/worker_photo/Tomas Scott.jpg' %}" alt="image">
+                  <img class="border-radius-md shadow-lg" src="{% static 'img/worker_photo/Tomas Scott.jpg' %}" alt="image" style="width: 176px; height: 176px;">
                 </div>
               </a>
             </div>
@@ -145,7 +135,7 @@
             <div class="col-lg-4 col-md-6 col-12 mt-n5">
               <a href="javascript:;">
                 <div class="p-3 pe-md-0">
-                  <img class="w-100 border-radius-md shadow-lg" src="{% static 'img/bruce-mars.jpg' %}" alt="image">
+                  <img class="border-radius-md shadow-lg" src="{% static 'img/bruce-mars.jpg' %}" alt="image" style="width: 176px; height: 176px;">
                 </div>
               </a>
             </div>
@@ -167,7 +157,7 @@
             <div class="col-lg-4 col-md-6 col-12 mt-n5">
               <a href="javascript:;">
                 <div class="p-3 pe-md-0">
-                  <img class="w-100 border-radius-md shadow-lg" src="{% static 'img/ivana-squares.jpg' %}" alt="image">
+                  <img class="border-radius-md shadow-lg" src="{% static 'img/ivana-squares.jpg' %}" alt="image" style="width: 176px; height: 176px;">
                 </div>
               </a>
             </div>
@@ -187,7 +177,7 @@
             <div class="col-lg-4 col-md-6 col-12 mt-n5">
               <a href="javascript:;">
                 <div class="p-3 pe-md-0">
-                  <img class="w-100 border-radius-md shadow-lg" src="{% static 'img/ivana-square.jpg' %}" alt="image">
+                  <img class="border-radius-md shadow-lg" src="{% static 'img/ivana-square.jpg' %}" alt="image" style="width: 176px; height: 176px;">
                 </div>
               </a>
             </div>
@@ -210,7 +200,7 @@
             <div class="col-lg-4 col-md-6 col-12 mt-n5">
               <a href="javascript:;">
                 <div class="p-3 pe-md-0">
-                  <img class="w-100 border-radius-md shadow-lg" src="{% static 'img/worker_photo/chief.jpg' %}" alt="image">
+                  <img class="border-radius-md shadow-lg" src="{% static 'img/worker_photo/chief.jpg' %}" alt="image" style="width: 176px; height: 176px;">
                 </div>
               </a>
             </div>
@@ -230,7 +220,7 @@
             <div class="col-lg-4 col-md-6 col-12 mt-n5">
               <a href="javascript:;">
                 <div class="p-3 pe-md-0">
-                  <img class="w-100 border-radius-md shadow-lg" src="{% static 'img/worker_photo/Tomas Scott.jpg' %}" alt="image">
+                  <img class="border-radius-md shadow-lg" src="{% static 'img/worker_photo/Tomas Scott.jpg' %}" alt="image" style="width: 176px; height: 176px;">
                 </div>
               </a>
             </div>
@@ -247,6 +237,7 @@
     </div>
   </div>
 </section>
+
 
 
     <!-- -------- END PRE-FOOTER 1 w/ SUBSCRIBE BUTTON AND IMAGE ------- -->

@@ -33,7 +33,7 @@ class Worker(AbstractUser):
         Position,
         on_delete=models.CASCADE,
         related_name="workers",
-        blank=False,
+        null=True,
     )
 
     class Meta:
