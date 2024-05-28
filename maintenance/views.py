@@ -51,22 +51,10 @@ class DepartmentListView(generic.ListView):
     queryset = Department.objects.order_by("name")
 
 
-# class DepartmentDetailView(LoginRequiredMixin, generic.DetailView):
-#     model = Department
-#     template_name = "maintenance/department_detail.html"
-#     context_object_name = "department_detail_list"
-
-
 class PositionListView(generic.ListView):
     model = Position
     template_name = "maintenance/position_list.html"
     context_object_name = "position_list"
-
-
-# class PositionDetailView(LoginRequiredMixin, generic.ListView):
-#     model = Position
-#     template_name = "maintenance/position_detail.html"
-#     context_object_name = "position_detail_list"
 
 
 class WorkerListView(generic.ListView):
