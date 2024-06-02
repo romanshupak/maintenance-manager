@@ -1,0 +1,1237 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-05-08T16:22:34.086Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "Bridge",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-05-08T16:22:45.220Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "2",
+        "object_repr": "Deck",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2024-05-08T16:23:06.639Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "3",
+        "object_repr": "Engine",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2024-05-08T16:23:24.256Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "4",
+        "object_repr": "Galley",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-05-08T16:30:20.312Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Master",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2024-05-08T16:30:36.096Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Chieff Officer",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2024-05-08T16:30:46.724Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "2nd Officer",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2024-05-08T16:30:54.299Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "3rd Officer",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2024-05-08T16:31:07.724Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "Chief Engineer",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2024-05-08T16:31:24.702Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "7",
+        "object_repr": "2nd Engineer",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2024-05-08T16:38:13.260Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "admin (Tomas Scott Default Position)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2024-05-09T08:49:04.282Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "pat_jef (  Chieff Officer)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2024-05-09T08:53:27.508Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "pat_jef (Patrick Jefferson Chieff Officer)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2024-05-09T08:53:53.650Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "admin (Tomas Scott Master)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Position\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2024-05-09T09:31:34.381Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "arg_tal (  2nd Officer)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2024-05-09T09:32:31.779Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "arg_tal (Argel Tal 2nd Officer)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2024-05-09T09:34:27.955Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Maintenance object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2024-05-09T09:50:50.065Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "jh_sm (  3rd Officer)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2024-05-09T09:51:19.837Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "jh_sm (John Smith 3rd Officer)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2024-05-09T09:56:18.007Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "jim_jack (  Chief Engineer)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2024-05-09T09:57:02.303Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "jim_jack (Jim Jackson Chief Engineer)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2024-05-09T09:59:07.517Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "6",
+        "object_repr": "er_sto (  2nd Engineer)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2024-05-09T09:59:40.246Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "6",
+        "object_repr": "er_sto (Erick Stocker 2nd Engineer)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2024-05-09T10:15:49.217Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Maintenance object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2024-05-09T10:26:34.154Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "Maintenance object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2024-05-09T10:30:37.063Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "Maintenance object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2024-05-09T10:34:52.343Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "5",
+        "object_repr": "Maintenance object (5)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2024-05-14T10:58:17.003Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Master",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Duties\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2024-05-14T10:59:29.523Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Chieff Officer",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Duties\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2024-05-14T11:00:12.101Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "2nd Officer",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Duties\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2024-05-14T11:00:47.916Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "3rd Officer",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Duties\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2024-05-14T11:01:27.310Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "Chief Engineer",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Duties\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2024-05-14T11:02:02.387Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "7",
+        "object_repr": "2nd Engineer",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Duties\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2024-05-27T11:10:42.984Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Default Position",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 4,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 4,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 4,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 4,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 5,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 5,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 5,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 5,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add department",
+        "content_type": 6,
+        "codename": "add_department"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change department",
+        "content_type": 6,
+        "codename": "change_department"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete department",
+        "content_type": 6,
+        "codename": "delete_department"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view department",
+        "content_type": 6,
+        "codename": "view_department"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add position",
+        "content_type": 7,
+        "codename": "add_position"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change position",
+        "content_type": 7,
+        "codename": "change_position"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete position",
+        "content_type": 7,
+        "codename": "delete_position"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view position",
+        "content_type": 7,
+        "codename": "view_position"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add worker",
+        "content_type": 8,
+        "codename": "add_worker"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change worker",
+        "content_type": 8,
+        "codename": "change_worker"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete worker",
+        "content_type": 8,
+        "codename": "delete_worker"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view worker",
+        "content_type": 8,
+        "codename": "view_worker"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add maintenance",
+        "content_type": 9,
+        "codename": "add_maintenance"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change maintenance",
+        "content_type": 9,
+        "codename": "change_maintenance"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete maintenance",
+        "content_type": 9,
+        "codename": "delete_maintenance"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view maintenance",
+        "content_type": 9,
+        "codename": "view_maintenance"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "maintenance",
+        "model": "department"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "maintenance",
+        "model": "position"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "maintenance",
+        "model": "worker"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "maintenance",
+        "model": "maintenance"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "2jw63yjs4a0kpz7p6yjwy05hokt6f9q9",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGllrJ9hrSnrOYPmzS8zHkeKEBnF3EikFtG_mzVv4sMyDXxpNvmRxEkocfrcY0p3qBvIt1Oso01jnqUS5KXKnTV7GTI_z7v4FhtCG9U2GkgtMxx4McO6AFAIwWoyAxkZjEJEhWU1sqO9s7zp2ybFSWjun12hdnv5VWpmbOOnPF0XNPGc:1sBwwZ:WWanBfFxt4uFvV3OaCvPxgZwZCNaqvf3ZQA0-rXIK3E",
+        "expire_date": "2024-06-11T13:32:47.170Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "j9dgf6hftum071sfjb0rb10sxl5iiq2f",
+    "fields": {
+        "session_data": ".eJxVjDsOgzAQBe-ydWQFs_5AmZ4zWGt7Cc7HljCkiXL3gERD-2bmfSGvb_dJNS0V-u4CjtZlcmvl2aUIPTRw2jyFJ-cdxAflexGh5GVOXuyKOGgVQ4n8uh3u6WCiOm01B--VNkpatJEiNpK115FJkqExKERrpJEdqtEiG8K2GZW2eoN8RdvC7w-YSTzs:1s6sgq:CNZZM77Bjx1kzzAXECoHyiumCF12vnG7gXE0YsJ343A",
+        "expire_date": "2024-05-28T13:59:36.920Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "kcoddjdtcvny8zd2rgpfm0gh9l535ces",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGllrJ9hrSnrOYPmzS8zHkeKEBnF3EikFtG_mzVv4sMyDXxpNvmRxEkocfrcY0p3qBvIt1Oso01jnqUS5KXKnTV7GTI_z7v4FhtCG9U2GkgtMxx4McO6AFAIwWoyAxkZjEJEhWU1sqO9s7zp2ybFSWjun12hdnv5VWpmbOOnPF0XNPGc:1sCijJ:4DI1O_TCdrF7bJy_B39rH5hinXAoN1oxwBrazMlun98",
+        "expire_date": "2024-06-13T16:34:17.091Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "op98vdjs2irc1vgoiq74ccju8jbplt4r",
+    "fields": {
+        "session_data": "eyJudW1fdmlzaXRzIjo0fQ:1s6roB:M4ZDRViZsSeTVpeqf6GD_XPDMpxA-lycypkAPhDqEfo",
+        "expire_date": "2024-05-28T13:03:07.283Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "uh2e70z0lvqz9bx5uy5gi7f3biwqqhug",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSFCh4dduvcbyACDxQdNSnFj_Hdp0oVu7zn3vJnDtk6uVVpcjmxkgh1-N4_hTmUD8YblOvMwl3XJnm8K32nllznS47y7f4EJ69TfFLxX2ihpwUaMICRpryOhRIMpKABrpJEnUMkCGYRBJKWt7pCOYIceLe3pXrnmtbIRPl9bfDzn:1s6rnA:t_rqrfBrVhEGEAl82xG4XCI_SEqhnMDoQ3rAR06cMxE",
+        "expire_date": "2024-05-28T13:02:04.127Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "w64m5pnr3m7s2u1aloay65bn0jzv3ftf",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGllrJ6zXlPScwfJnTczHkeKEBnF3EikFtG_mzVs4v8yDWxpPriRxEkocfrfg453rBtLN1-so41jnqQS5KXKnTV7GxI_z7v4FBt-G9c3I0frMxx4QcuqAFQFkMhSA0AREIsoQjeaM3Hemt1220WaltLZWr9G6PN2rtDI3ccLPF0XVPGs:1s7HJe:078UJ0II1GB6fMDN-hluVn7dK8HjdszeZ7Jzm5IByMI",
+        "expire_date": "2024-05-29T16:17:18.581Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "w6dmvp7l1rwp0vwnge66zjgf3rbzz0s0",
+    "fields": {
+        "session_data": ".eJxVjDkOwyAQRe9CHaEBExaX6XMGxDITkwUkY6eJcvfEkhu3_733P6yuL_8uvSydjerEfFiXya8dZ18yG5lghy2G9MC6gXwP9dZ4anWZS-Sbwnfa-bVlfF5293AwhT79a9SYXCA8K9BAeQAUFoCssRGsNlFray1BMhJJoxqMcgO55EgIKZ2T7PsDhqQ8aQ:1sCmby:Ptm0UhdUTnZ6KyVcJFn8Eqs7GMFojSNsNP99Wdgq0is",
+        "expire_date": "2024-06-13T20:42:58.457Z"
+    }
+},
+{
+    "model": "maintenance.department",
+    "pk": 1,
+    "fields": {
+        "name": "Bridge"
+    }
+},
+{
+    "model": "maintenance.department",
+    "pk": 2,
+    "fields": {
+        "name": "Deck"
+    }
+},
+{
+    "model": "maintenance.department",
+    "pk": 3,
+    "fields": {
+        "name": "Engine"
+    }
+},
+{
+    "model": "maintenance.department",
+    "pk": 4,
+    "fields": {
+        "name": "Galley"
+    }
+},
+{
+    "model": "maintenance.position",
+    "pk": 2,
+    "fields": {
+        "name": "Master"
+    }
+},
+{
+    "model": "maintenance.position",
+    "pk": 3,
+    "fields": {
+        "name": "Chieff Officer"
+    }
+},
+{
+    "model": "maintenance.position",
+    "pk": 4,
+    "fields": {
+        "name": "2nd Officer"
+    }
+},
+{
+    "model": "maintenance.position",
+    "pk": 5,
+    "fields": {
+        "name": "3rd Officer"
+    }
+},
+{
+    "model": "maintenance.position",
+    "pk": 6,
+    "fields": {
+        "name": "Chief Engineer"
+    }
+},
+{
+    "model": "maintenance.position",
+    "pk": 7,
+    "fields": {
+        "name": "2nd Engineer"
+    }
+},
+{
+    "model": "maintenance.worker",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$LsiMiZ3qVyxTlsUf6r3SZK$a7WF1JiwCX9L33zePluDUxZNeteIRoYVhuQo86iUM8k=",
+        "last_login": "2024-05-30T20:42:58.147Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "Tomas",
+        "last_name": "Scott",
+        "email": "admin@admin.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-05-08T13:59:53Z",
+        "position": 2,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "maintenance.worker",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$3goDUTHyYEYs0eg7nUrNuT$wryRLa9X3zos3/R4zV9jxxffrToAR0MFYqwJ9atmSCA=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "pat_jef",
+        "first_name": "Patrick",
+        "last_name": "Jefferson",
+        "email": "patrick@patrick.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-09T08:49:03Z",
+        "position": 3,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "maintenance.worker",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$UpqYNKN0PbRAtJdMZ1Hndm$0PveYCHDIozRJfat6YF/BDpgc3AFUp/MhNvhlwHuldE=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "arg_tal",
+        "first_name": "Argel",
+        "last_name": "Tal",
+        "email": "argel@argel.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-09T09:31:33Z",
+        "position": 4,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "maintenance.worker",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$WfbPe7fLSdOjhFJyzHKZTg$Nx2wDoD9+w7dymt+itHAAbeF3CnIHZGlZLQHcS+c7Vg=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "jh_sm",
+        "first_name": "John",
+        "last_name": "Smith",
+        "email": "john@john.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-09T09:50:49Z",
+        "position": 5,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "maintenance.worker",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$TXDgR1CKO2oQQ9S6mcOBw1$vTGGrOgGIJ6YzXjTo3T52Jw04zl+BpvNbzNVYstZj1M=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "jim_jack",
+        "first_name": "Jim",
+        "last_name": "Jackson",
+        "email": "jim@jim.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-09T09:56:17Z",
+        "position": 6,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "maintenance.worker",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$dNXaycCkTfmCg9uYUf542b$rpf6QB6aJeRHQxIHb/3CgIwrSZW+29l1UTHqhbchkqs=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "er_sto",
+        "first_name": "Erick",
+        "last_name": "Stocker",
+        "email": "erick@erick.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-05-09T09:59:07Z",
+        "position": 7,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "maintenance.maintenance",
+    "pk": 1,
+    "fields": {
+        "name": "GMDSS",
+        "description": "Monthly Tests On GMDSS Equipment\r\nThe Emergency Position Indicating Radio Beacon or EPIRB should be examined by carrying out a self-test function without using the satellite system. No emergency signal is transmitted during the self-test. During self-test the battery voltage, output power and frequency are checked. The EPIRB should also be checked for any physical damage. The expiry date of the battery unit and that of the hydrostatic release unit should be checked. Also, check that the safety clip is properly attached and in place. Proper records to be done in GMDSS log book.",
+        "deadline": "2024-05-31",
+        "is_completed": false,
+        "department": 1,
+        "person_in_charge": [
+            3
+        ]
+    }
+},
+{
+    "model": "maintenance.maintenance",
+    "pk": 2,
+    "fields": {
+        "name": "Hatch cover inspection",
+        "description": "Weekly hatch cover inspecton.:\r\n- greasing of rubbers;\r\n- maintenance of ventilations;\r\n- closing pins must be cheked;\r\n- general condition to be overviewed.",
+        "deadline": "2024-05-23",
+        "is_completed": false,
+        "department": 2,
+        "person_in_charge": [
+            2
+        ]
+    }
+},
+{
+    "model": "maintenance.maintenance",
+    "pk": 3,
+    "fields": {
+        "name": "Refrigirator room cleanliness",
+        "description": "A good cold room cleaning procedure includes keeping the floor and surfaces clean and clear at all times. You can use a vacuum cleaner for any build-up of dust on the floor and tackle surfaces with a cloth, warm water, and mild detergent or specialist cold room cleaning products. Maintenancer should be provided under supervision of Chief Cook.",
+        "deadline": "2024-05-26",
+        "is_completed": false,
+        "department": 4,
+        "person_in_charge": [
+            2
+        ]
+    }
+},
+{
+    "model": "maintenance.maintenance",
+    "pk": 4,
+    "fields": {
+        "name": "Flags",
+        "description": "To maintain in good order all flags, signaling equipment, regulation lights and shapes. Compulsory inventory must be provided. In case anything missing, Master should be informed.",
+        "deadline": "2024-05-25",
+        "is_completed": false,
+        "department": 1,
+        "person_in_charge": [
+            4
+        ]
+    }
+},
+{
+    "model": "maintenance.maintenance",
+    "pk": 5,
+    "fields": {
+        "name": "Emergency Equipment",
+        "description": "The 2nd Engineer on Ship will be responsible for all emergency machinery and equipment in accordance with SOLAS.",
+        "deadline": "2024-05-20",
+        "is_completed": false,
+        "department": 3,
+        "person_in_charge": [
+            6
+        ]
+    }
+},
+{
+    "model": "maintenance.maintenance",
+    "pk": 6,
+    "fields": {
+        "name": "Hospital Inspection",
+        "description": "According ISM, monthly inspection of Ship`s hospital room must be carried out by responsibel officer. Expiration dates of all medicines to be checked. Proper condition and maintenance of medical oxygen cylinders to be done. General cleanliness of bath room must be checked and fulfield. Defibrilator device(if provided), to be charged. All necessary info must be recorded in Medical log book.",
+        "deadline": "2024-05-28",
+        "is_completed": false,
+        "department": 1,
+        "person_in_charge": [
+            3
+        ]
+    }
+},
+{
+    "model": "maintenance.maintenance",
+    "pk": 8,
+    "fields": {
+        "name": "GMDSS EPIRB",
+        "description": "Each EPIRB shall be examined to check –\r\nIts capability to operate properly by carrying out a self test function (see manufacturers instructions) without using the satellite system.\r\nIt must be done monthly and proper records should be recorded in GMDSS log book.",
+        "deadline": "2024-06-10",
+        "is_completed": false,
+        "department": 1,
+        "person_in_charge": [
+            3
+        ]
+    }
+},
+{
+    "model": "maintenance.maintenance",
+    "pk": 9,
+    "fields": {
+        "name": "Monthly test of Immersion suits",
+        "description": "Performing a monthly test of an immersion suit involves:\r\n\r\nVisual Inspection: Check for any signs of damage, wear, or deterioration.\r\nZipper Functionality: Ensure the zipper operates smoothly.\r\nSeam Integrity: Inspect seams for any splits or weaknesses.\r\nValve and Mouthpiece Check: Confirm valves and mouthpieces are intact and functional.\r\nDonning Practice: Practice putting on the suit to ensure a proper fit.\r\nStorage Conditions: Verify the suit is stored correctly in a dry, cool, and easily accessible location.",
+        "deadline": "2024-05-15",
+        "is_completed": true,
+        "department": 2,
+        "person_in_charge": [
+            2,
+            4
+        ]
+    }
+},
+{
+    "model": "maintenance.maintenance",
+    "pk": 12,
+    "fields": {
+        "name": "Liferaft inspection",
+        "description": "To start, the casing of the life raft is visually inspected. The life raft and gas inflation cylinder are removed and then inspected. The life raft is inflated and the technician checks the roping, glue, and life raft fabric. Any replaceable parts of the life raft are replaced if needed",
+        "deadline": "2024-05-09",
+        "is_completed": true,
+        "department": 2,
+        "person_in_charge": [
+            2,
+            4
+        ]
+    }
+},
+{
+    "model": "maintenance.maintenance",
+    "pk": 13,
+    "fields": {
+        "name": "Boiler inspection",
+        "description": "An internal boiler waterside inspection consists of all waterside areas of the vessel (e.g., steam and water areas, blowdown lines, feedwater connections, and low water safety devises) as well as dearators, superheaters, economizers, and blowdown heat exchangers",
+        "deadline": "2024-05-08",
+        "is_completed": true,
+        "department": 3,
+        "person_in_charge": [
+            6
+        ]
+    }
+},
+{
+    "model": "maintenance.maintenance",
+    "pk": 14,
+    "fields": {
+        "name": "ECDIS",
+        "description": "ENCs are updated by weekly ‘Notices to Mariners’ issued by Hydrographic Offices / Regional ENC co-ordination centers ( RENC) and corrections are received on the vessel either by email or data file (AVCS DVD). The actual updating is either applied to the ECDIS chart database automatically or by the user. The ECDIS generates error message when the update is unsuccessful or when a ENC is in use and has not been corrected up to date.",
+        "deadline": "2024-05-15",
+        "is_completed": true,
+        "department": 1,
+        "person_in_charge": [
+            1,
+            3
+        ]
+    }
+}
+]
