@@ -2,7 +2,7 @@ import sqlite3
 import json
 
 # Підключення до бази даних
-conn = sqlite3.connect('db.sqlite3')
+conn = sqlite3.connect("db.sqlite3")
 cursor = conn.cursor()
 
 # Отримуємо список таблиць
@@ -30,7 +30,7 @@ for table in tables:
     database_dict[table_name] = table_data
 
 # Записуємо у файл JSON
-with open('output.json', 'w', encoding='utf-8') as f:
+with open("output.json", "w", encoding="utf-8") as f:
     json.dump(database_dict, f, ensure_ascii=False, indent=4)
 
 # Закриваємо з'єднання з базою даних
