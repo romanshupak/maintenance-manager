@@ -1,0 +1,74 @@
+{% extends 'layouts/base_background.html' %}
+{% load static %}
+
+{% block title %}Documentation{% endblock title %}
+{% block body %} class="blog-author bg-gray-200" {% endblock body %}
+
+{% block header %}
+{% include 'includes/navigation.html' %}
+{% endblock header %}
+
+{% block content %}
+
+  <!-- -------- START HEADER 4 w/ search book a ticket form ------- -->
+  <header class="bg-gradient-dark">
+    <div class="page-header min-vh-75" style="background-image: url('{% static 'img/shapes/mlc.jpg' %}');">
+      <span class="mask bg-gradient-dark opacity-6"></span>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mx-auto my-auto">
+            <h1 class="text-white">MLC (Maritime Labour Convention)</h1>
+            <p class="lead mb-4 text-white opacity-8"> Protects seafarers' rights and ensures decent working conditions</p>
+            <h6 class="text-white mb-2 mt-5">Find us on</h6>
+            <div class="d-flex justify-content-center">
+              <a href="https://www.facebook.com/profile.php?id=100005855806696" target="_blank"><i class="fab fa-facebook text-lg text-white me-4"></i></a>
+              <a href="https://github.com/romanshupak" target="_blank"><i class="fab fa-github text-lg text-white me-4"></i></a>
+              <a href="https://t.me/romanshu" target="_blank"><i class="fab fa-telegram text-lg text-white"></i></a>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- -------- END HEADER 4 w/ search book a ticket form ------- -->
+
+  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
+    <section class="py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="mb-5">Maritime Labour Convention</h3>
+            <p class="lead">
+              The Maritime Labour Convention (MLC) is an International Labour Organization (ILO) convention, number 186,
+              established in 2006 as the fourth pillar of international maritime law and embodies "all up-to-date
+              standards of existing international maritime labour Conventions and Recommendations, as well as the
+              fundamental principles to be found in other international labour Conventions".The other pillars are
+              the SOLAS, STCW and MARPOL. The treaties applies to all ships entering the harbours of parties to the
+              treaty (port states), as well as to all ships flying the flag of state party (flag states, as of 2021:
+              over 91 per cent).
+
+              Maritime Labour Convention (MLC), according to International Labour Organization, provides a broad
+              perspective to the seafarer’s rights and fortification at work.
+
+              The convention entered into force on 20 August 2013, one year after registering 30 ratifications of
+              countries representing over 33 per cent of the world gross tonnage of ships. Already after five
+              ratifications the ratifying countries (Bahamas, Norway, Liberia, Marshall Islands, and Panama) represented
+              over 43 per cent of the gross world tonnage (which is over 33 per cent; the second requirement for
+              entry into force). As of August 2021, the convention has been ratified by 97 states representing over
+              91 per cent of global shipping.
+
+              Although the Convention has not been ratified worldwide, it has widespread effect because vessels from
+              non-signatory states that attempt to enter ports of signatory states may face arrest and penalties for
+              non-compliance with the MLC.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+{% endblock content %}
+
+{% block footer %}
+{% include 'includes/footer_background.html' %}
+{% endblock footer %}

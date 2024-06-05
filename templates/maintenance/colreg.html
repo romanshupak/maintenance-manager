@@ -1,0 +1,71 @@
+{% extends 'layouts/base_background.html' %}
+{% load static %}
+
+{% block title %}Documentation{% endblock title %}
+{% block body %} class="blog-author bg-gray-200" {% endblock body %}
+
+{% block header %}
+{% include 'includes/navigation.html' %}
+{% endblock header %}
+
+{% block content %}
+
+  <!-- -------- START HEADER 4 w/ search book a ticket form ------- -->
+  <header class="bg-gradient-dark">
+    <div class="page-header min-vh-75" style="background-image: url('{% static 'img/shapes/colreg.jpg' %}');">
+      <span class="mask bg-gradient-dark opacity-6"></span>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mx-auto my-auto">
+            <h1 class="text-white">International Regulations for Preventing Collisions at Sea(COLREG)</h1>
+            <p class="lead mb-4 text-white opacity-8">Sets navigational rules to avoid collisions</p>
+            <h6 class="text-white mb-2 mt-5">Find us on</h6>
+            <div class="d-flex justify-content-center">
+              <a href="https://www.facebook.com/profile.php?id=100005855806696" target="_blank"><i class="fab fa-facebook text-lg text-white me-4"></i></a>
+              <a href="https://github.com/romanshupak" target="_blank"><i class="fab fa-github text-lg text-white me-4"></i></a>
+              <a href="https://t.me/romanshu" target="_blank"><i class="fab fa-telegram text-lg text-white"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- -------- END HEADER 4 w/ search book a ticket form ------- -->
+
+  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
+    <section class="py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="mb-5">International Regulations for Preventing Collisions at Sea</h3>
+            <p class="lead">
+              The International Regulations for Preventing Collisions at Sea 1972 also known as Collision Regulations
+              (COLREGs) are published by the International Maritime Organization (IMO) and set out, among other things,
+              the "rules of the road" or navigation rules to be followed by ships and other vessels at sea to prevent
+              collisions between two or more vessels. COLREGs can also refer to the specific political line that
+              divides inland waterways, which are subject to their own navigation rules, and coastal waterways which are
+              subject to international navigation rules. They are derived from a multilateral treaty called the
+              Convention on the International Regulations for Preventing Collisions at Sea[citation needed], also known
+              as Collision Regulations of 1960.
+
+              Although rules for navigating vessels inland may differ, the international rules specify that they should
+              be as closely in line with the international rules as possible. In most of continental Europe, the Code
+              Européen des Voies de la Navigation Intérieure (CEVNI, or the European Code for Navigation on Inland
+              Waters) apply. In the United States, the rules for vessels navigating inland are published alongside the
+              international rules.
+
+              The Racing Rules of Sailing, which govern the conduct of yacht and dinghy racing under the sanction of
+              national sailing authorities which are members of World Sailing, are based on the COLREGs, but differ in
+              some important matters such as overtaking and right of way close to turning marks in competitive sailing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+{% endblock content %}
+
+{% block footer %}
+{% include 'includes/footer_background.html' %}
+{% endblock footer %}

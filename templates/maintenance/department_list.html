@@ -1,0 +1,339 @@
+{% extends 'layouts/base_background.html' %}
+{% load static %}
+
+{% block title %} Material Kit 2 by Creative Tim {% endblock title %}
+{% block body %} class="about-us bg-gray-200" {% endblock body %}
+
+{% block header %}
+
+{% include 'includes/navigation.html' %}
+
+{% endblock header %}
+
+{% block content %}
+
+  <!-- -------- START HEADER 7 w/ text and video ------- -->
+  <header class="bg-gradient-dark">
+    <div class="page-header min-vh-75" style="background-image: url('{% static 'img/shapes/departments.jpg' %}');">
+      <span class="mask bg-gradient-dark opacity-6"></span>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mx-auto my-auto">
+            <h1 class="text-white">Empowering excellence in every department</h1>
+            <p class="lead mb-4 text-white opacity-8">Excellence trough teamwork</p>
+            <h6 class="text-white mb-2 mt-5">Find us on</h6>
+            <div class="d-flex justify-content-center">
+              <a href="https://www.facebook.com/profile.php?id=100005855806696" target="_blank"><i
+                  class="fab fa-facebook text-lg text-white me-4"></i></a>
+              <a href="https://github.com/romanshupak" target="_blank"><i
+                  class="fab fa-github text-lg text-white me-4"></i></a>
+              <a href="https://t.me/romanshu" target="_blank"><i
+                  class="fab fa-telegram text-lg text-white me-4"></i></a>
+              <a href="https://www.instagram.com/not_only_an_athlete" target="_blank"><i
+                  class="fab fa-instagram text-lg text-white me-4"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- -------- END HEADER 7 w/ text and video ------- -->
+  <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
+    <!-- Section with four info areas left & one card right with image and waves -->
+    <section class="py-7">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="row justify-content-start">
+              <div class="col-md-6">
+                <div class="info">
+                  <i class="material-icons text-3xl text-gradient text-info mb-3">favorite</i>
+                  <h5>Bridge</h5>
+                  <p>This is the nerve center of a ship. From this area, the ship is navigated, conned, maneuvered, and otherwise operated in such a manner as to accomplish the goals of the cruise safely and effectively.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info">
+                  <i class="material-icons text-3xl text-gradient text-info mb-3">engineering</i>
+                  <h5>Engine</h5>
+                  <p>The largest physical compartment of the machinery space. It houses the vessel's prime mover, usually some variations of a heat engine.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-start mt-4">
+              <div class="col-md-6">
+                <div class="info">
+                  <i class="material-icons text-3xl text-gradient text-info mb-3">deck</i>
+                  <h5>Deck</h5>
+                  <p>A deck is a permanent covering over a compartment or a hull of a ship.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info">
+                  <i class="material-icons text-3xl text-gradient text-info mb-3">kitchen</i>
+                  <h5>Galley</h5>
+                  <p>A kitchen on a ship. The galley and the messroom are usually on the same deck.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 ms-auto mt-lg-0 mt-4">
+            <div class="card">
+              <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                  <a class="d-block blur-shadow-image">
+                      <img src="{% static 'img/venti-views-FPKnAO-CF6M-unsplash.jpg' %}" alt="img-colored-shadow" class="img-fluid border-radius-lg">
+                  </a>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="font-weight-normal">
+                   
+                </h5>
+                <p class="mb-0">
+                 Effective cooperation between vessel departments is not only a matter of operational efficiency but also crucial for the safety and well-being of the crew. By fostering open communication, mutual respect, and a shared commitment to safety and compliance, vessels can achieve smoother and more successful operations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Section with four info areas left & one card right with image and waves -->
+<!-- -------- START Features w/ pattern background & stats & rocket -------- -->
+<section class="pb-5 position-relative bg-gradient-dark mx-n3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 text-start mb-5 mt-5">
+        <h3 class="text-white z-index-1 position-relative">The Executive Team</h3>
+        <p class="text-white opacity-8 mb-0">There’s nothing I really wanted to do in life that I wasn’t able to get good at. That’s my skill.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <div class="card card-profile mt-4">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-n5">
+              <a href="javascript:;">
+                <div class="p-3 pe-md-0">
+                  <img class="border-radius-md shadow-lg" src="{% static 'img/worker_photo/Tomas Scott.jpg' %}" alt="image" style="width: 176px; height: 176px;">
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-8 col-md-6 col-12 my-auto">
+              <div class="card-body ps-lg-0">
+                <h5 class="mb-0">Tomas Scott</h5>
+                <h6 class="text-info">Master</h6>
+                <p class="mb-0">The Master is responsible for the overall command of the vessel and ensures the safety of the crew and cargo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="card card-profile mt-lg-4 mt-5">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-n5">
+              <a href="javascript:;">
+                <div class="p-3 pe-md-0">
+                  <img class="border-radius-md shadow-lg" src="{% static 'img/worker_photo/Chief Officer.jpg' %}" alt="image" style="width: 176px; height: 176px;">
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-8 col-md-6 col-12 my-auto">
+              <div class="card-body ps-lg-0">
+                <h5 class="mb-0">Patrick Jefferson</h5>
+                <h6 class="text-info">Chief Officer</h6>
+                <p class="mb-0">The Chief Officer assists the Master and oversees the deck crew, ensuring the vessel's safe and efficient operation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-lg-6 col-12">
+        <div class="card card-profile mt-4 z-index-2">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-n5">
+              <a href="javascript:;">
+                <div class="p-3 pe-md-0">
+                  <img class="border-radius-md shadow-lg" src="{% static 'img/worker_photo/2nd Mate.jpg' %}" alt="image" style="width: 176px; height: 176px;">
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-8 col-md-6 col-12 my-auto">
+              <div class="card-body ps-lg-0">
+                <h5 class="mb-0">Argel Tal</h5>
+                <h6 class="text-info">2nd Officer</h6>
+                <p class="mb-0">The 2nd Officer is responsible for navigation and maintaining navigational equipment, ensuring the vessel stays on course.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="card card-profile mt-lg-4 mt-5 z-index-2">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-n5">
+              <a href="javascript:;">
+                <div class="p-3 pe-md-0">
+                  <img class="border-radius-md shadow-lg" src="{% static 'img/ivana-square.jpg' %}" alt="image" style="width: 176px; height: 176px;">
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-8 col-md-6 col-12 my-auto">
+              <div class="card-body ps-lg-0">
+                <h5 class="mb-0">John Smith</h5>
+                <h6 class="text-info">3rd Officer</h6>
+                <p class="mb-0">Assists in navigation, safety drills, and maintenance tasks, supporting the higher-ranking officers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Additional team members -->
+    <div class="row mt-4">
+      <div class="col-lg-6 col-12">
+        <div class="card card-profile mt-4 z-index-2">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-n5">
+              <a href="javascript:;">
+                <div class="p-3 pe-md-0">
+                  <img class="border-radius-md shadow-lg" src="{% static 'img/worker_photo/chief.jpg' %}" alt="image" style="width: 176px; height: 176px;">
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-8 col-md-6 col-12 my-auto">
+              <div class="card-body ps-lg-0">
+                <h5 class="mb-0">Jim Jackson</h5>
+                <h6 class="text-info">Chief Engineer</h6>
+                <p class="mb-0">Oversees the engine room and all mechanical systems, ensuring the vessel's propulsion and power needs are met.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="card card-profile mt-lg-4 mt-5 z-index-2">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-n5">
+              <a href="javascript:;">
+                <div class="p-3 pe-md-0">
+                  <img class="border-radius-md shadow-lg" src="{% static 'img/worker_photo/2nd Engineer.jpg' %}" alt="image" style="width: 176px; height: 176px;">
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-8 col-md-6 col-12 my-auto">
+              <div class="card-body ps-lg-0">
+                <h5 class="mb-0">Erick Stocker</h5>
+                <h6 class="text-info">2nd Engineer</h6>
+                <p class="mb-0">Assists the Chief Engineer and is responsible for maintaining the engine and related systems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- -------- END PRE-FOOTER 1 w/ SUBSCRIBE BUTTON AND IMAGE ------- -->
+  </div>
+  {% endblock content %}
+
+  {% block javascrips %}
+  
+    <!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
+    <script src="{% static 'js/plugins/countup.min.js' %}"></script>
+
+    <script>
+      // get the element to animate
+      var element = document.getElementById('count-stats');
+      var elementHeight = element.clientHeight;
+  
+      // listen for scroll event and call animate function
+  
+      document.addEventListener('scroll', animate);
+  
+      // check if element is in view
+      function inView() {
+        // get window height
+        var windowHeight = window.innerHeight;
+        // get number of pixels that the document is scrolled
+        var scrollY = window.scrollY || window.pageYOffset;
+        // get current scroll position (distance from the top of the page to the bottom of the current viewport)
+        var scrollPosition = scrollY + windowHeight;
+        // get element position (distance from the top of the page to the bottom of the element)
+        var elementPosition = element.getBoundingClientRect().top + scrollY + elementHeight;
+  
+        // is scroll position greater than element position? (is element in view?)
+        if (scrollPosition > elementPosition) {
+          return true;
+        }
+  
+        return false;
+      }
+  
+      var animateComplete = true;
+      // animate element when it is in view
+      function animate() {
+  
+        // is element in view?
+        if (inView()) {
+          if (animateComplete) {
+            if (document.getElementById('state1')) {
+              const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
+              if (!countUp.error) {
+                countUp.start();
+              } else {
+                console.error(countUp.error);
+              }
+            }
+            if (document.getElementById('state2')) {
+              const countUp1 = new CountUp('state2', document.getElementById("state2").getAttribute("countTo"));
+              if (!countUp1.error) {
+                countUp1.start();
+              } else {
+                console.error(countUp1.error);
+              }
+            }
+            if (document.getElementById('state3')) {
+              const countUp2 = new CountUp('state3', document.getElementById("state3").getAttribute("countTo"));
+              if (!countUp2.error) {
+                countUp2.start();
+              } else {
+                console.error(countUp2.error);
+              };
+            }
+            animateComplete = false;
+          }
+        }
+      }
+  
+      if (document.getElementById('typed')) {
+        var typed = new Typed("#typed", {
+          stringsElement: '#typed-strings',
+          typeSpeed: 90,
+          backSpeed: 90,
+          backDelay: 200,
+          startDelay: 500,
+          loop: true
+        });
+      }
+    </script>
+    <script>
+      if (document.getElementsByClassName('page-header')) {
+        window.onscroll = debounce(function() {
+          var scrollPosition = window.pageYOffset;
+          var bgParallax = document.querySelector('.page-header');
+          var oVal = (window.scrollY / 3);
+          bgParallax.style.transform = 'translate3d(0,' + oVal + 'px,0)';
+        }, 6);
+      }
+    </script>
+  
+  
+  {% endblock javascrips %}

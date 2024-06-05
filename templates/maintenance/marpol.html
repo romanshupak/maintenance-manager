@@ -1,0 +1,66 @@
+{% extends 'layouts/base_background.html' %}
+{% load static %}
+
+{% block title %}Documentation{% endblock title %}
+{% block body %} class="blog-author bg-gray-200" {% endblock body %}
+
+{% block header %}
+{% include 'includes/navigation.html' %}
+{% endblock header %}
+
+{% block content %}
+
+  <!-- -------- START HEADER 4 w/ search book a ticket form ------- -->
+  <header class="bg-gradient-dark">
+    <div class="page-header min-vh-75" style="background-image: url('{% static 'img/shapes/marpol.jpg' %}');">
+      <span class="mask bg-gradient-dark opacity-6"></span>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mx-auto my-auto">
+            <h1 class="text-white">The International Convention for the Prevention of Pollution from Ships (MARPOL)</h1>
+            <p class="lead mb-4 text-white opacity-8">Aims to minimize pollution of the seas, including oil, chemicals, and harmful substances, through regulations on ship design and operation</p>
+            <h6 class="text-white mb-2 mt-5">Find us on</h6>
+            <div class="d-flex justify-content-center">
+              <a href="https://www.facebook.com/profile.php?id=100005855806696" target="_blank"><i class="fab fa-facebook text-lg text-white me-4"></i></a>
+              <a href="https://github.com/romanshupak" target="_blank"><i class="fab fa-github text-lg text-white me-4"></i></a>
+              <a href="https://t.me/romanshu" target="_blank"><i class="fab fa-telegram text-lg text-white"></i></a>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- -------- END HEADER 4 w/ search book a ticket form ------- -->
+
+  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
+    <section class="py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="mb-5">Marine Pollution</h3>
+            <p class="lead">
+              The International Convention for the Prevention of Pollution from Ships, 1973 as modified by the Protocol
+              of 1978, or "MARPOL 73/78" (short for "marine pollution") is one of the most important international
+              marine environmental conventions. It was developed by the International Maritime Organization with an
+              objective to minimize pollution of the oceans and seas, including dumping, oil and air pollution.
+
+              The original MARPOL was signed on 17 February 1973, but did not come into force at the signing date. The
+              current convention is a combination of 1973 Convention and the 1978 Protocol, which entered into force
+              on 2 October,1983. As of January 2018, 156 states are parties to the convention, being flag states of
+              99.42% of the world's shipping tonnage.
+
+              All ships flagged under countries that are signatories to MARPOL are subject to its requirements,
+              regardless of where they sail, and member nations are responsible for vessels registered on their national
+              ship registry.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+{% endblock content %}
+
+{% block footer %}
+{% include 'includes/footer_background.html' %}
+{% endblock footer %}
