@@ -1,0 +1,84 @@
+{#{% extends "base.html" %}#}
+{#{% block content %}#}
+{#  <h1>Delete Maintenance</h1>#}
+{##}
+{#  <p>Are you sure you want to delete the Maintenance: {{ maintenance.name }}?</p>#}
+{#  <p><i>All Departments with this maintenance will be also deleted!</i></p>#}
+{#  <form action="" method="post">#}
+{#    {% csrf_token %}#}
+{#    <input type="submit" value="Yes, delete" class="btn btn-danger" />#}
+{#  </form>#}
+{#  #}
+{#{% endblock %}#}
+
+
+{% extends 'layouts/base_background.html' %}
+{% load static %}
+
+{% block title %} Delete Maintenance {% endblock title %}
+{% block body %} class="blog-author bg-gray-200" {% endblock body %}
+
+{% block header %}
+{% include 'includes/navigation.html' %}
+{% endblock header %}
+
+{% block content %}
+  <!-- -------- START HEADER 4 w/ search book a ticket form ------- -->
+  <header class="bg-gradient-dark">
+    <div class="page-header min-vh-75" style="background-image: url('{% static 'img/city-profile.jpg' %}');">
+      <span class="mask bg-gradient-dark opacity-6"></span>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mx-auto my-auto">
+            <h1 class="text-white">Empowering excellence in every department</h1>
+            <p class="lead mb-4 text-white opacity-8">Excellence through teamwork</p>
+            <!-- Form for creating new maintenance under the phrase -->
+            <div class="row mt-4 justify-content-center">
+              <div class="col-lg-6">
+              </div>
+            </div>
+            <h6 class="text-white mb-2 mt-5">Find us on</h6>
+            <div class="d-flex justify-content-center">
+              <a href="https://www.facebook.com/profile.php?id=100005855806696" target="_blank"><i
+                  class="fab fa-facebook text-lg text-white me-4"></i></a>
+              <a href="https://github.com/romanshupak" target="_blank"><i
+                  class="fab fa-github text-lg text-white me-4"></i></a>
+              <a href="https://t.me/romanshu" target="_blank"><i
+                  class="fab fa-telegram text-lg text-white me-4"></i></a>
+              <a href="https://www.instagram.com/not_only_an_athlete" target="_blank"><i
+                  class="fab fa-instagram text-lg text-white me-4"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- -------- END HEADER 4 w/ search book a ticket form ------- -->
+
+  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
+    <section class="py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="mb-5">Deletion Confirmation</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Delete Maintenance</h1>
+            <p>Are you sure you want to delete the Maintenance: {{ maintenance.name }}?</p>
+            <p><i>All Information about this maintenance will also be deleted!</i></p>
+            <form action="" method="post">
+              {% csrf_token %}
+              <input type="submit" value="Yes, delete" class="btn btn-danger" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+{% endblock content %}
+
+{% block footer %}
+{% include 'includes/footer_background.html' %}
+{% endblock footer %}

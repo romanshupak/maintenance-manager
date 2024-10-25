@@ -1,0 +1,91 @@
+{% extends 'layouts/base_background.html' %}
+{% load static %}
+
+{% block title %} Maintenance Detail {% endblock title %}
+{% block body %} class="blog-author bg-gray-200" {% endblock body %}
+
+{% block header %}
+{% include 'includes/navigation.html' %}
+{% endblock header %}
+
+{% block content %}
+  <!-- -------- START HEADER 4 w/ search book a ticket form ------- -->
+  <header class="bg-gradient-dark">
+    <div class="page-header min-vh-75" style="background-image: url('{% static 'img/city-profile.jpg' %}');">
+      <span class="mask bg-gradient-dark opacity-6"></span>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mx-auto my-auto">
+            <h1 class="text-white">Empowering excellence in every department</h1>
+            <p class="lead mb-4 text-white opacity-8">Excellence through teamwork</p>
+            <div class="row mt-4 justify-content-center"></div>
+            <h6 class="text-white mb-2 mt-5">Find us on</h6>
+            <div class="d-flex justify-content-center">
+              <a href="https://www.facebook.com/profile.php?id=100005855806696" target="_blank"><i
+                  class="fab fa-facebook text-lg text-white me-4"></i></a>
+              <a href="https://github.com/romanshupak" target="_blank"><i
+                  class="fab fa-github text-lg text-white me-4"></i></a>
+              <a href="https://t.me/romanshu" target="_blank"><i
+                  class="fab fa-telegram text-lg text-white me-4"></i></a>
+              <a href="https://www.instagram.com/not_only_an_athlete" target="_blank"><i
+                  class="fab fa-instagram text-lg text-white me-4"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- -------- END HEADER 4 w/ search book a ticket form ------- -->
+
+  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
+    <section class="py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="mb-5">Maintenance Detail</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <table class="table">
+              <tr>
+                <th>ID</th>
+                <th style="width: 10%;">Name</th>
+                <th style="width: 150%;">Description</th>
+                <th>Deadline</th>
+                <th>Status</th>
+                <th>Department</th>
+                <th>Person(s) in Charge</th>
+                <th>Actions</th>
+              </tr>
+              <tr>
+                <td>{{ maintenance_detail_list.id }}</td>
+                <td style="white-space: pre-wrap;">{{ maintenance_detail_list.name }}</td>
+                <td style="white-space: pre-wrap;">{{ maintenance_detail_list.description }}</td>
+                <td>{{ maintenance_detail_list.deadline }}</td>
+                <td>{% if maintenance_detail_list.is_completed %}Completed{% else %}Not Completed{% endif %}</td>
+                <td>{{ maintenance_detail_list.department }}</td>
+                <td>
+                  <ul>
+                    {% for person in maintenance_detail_list.person_in_charge.all %}
+                      <li>{{ person }}</li>
+                    {% endfor %}
+                  </ul>
+                </td>
+                <td>
+                  <a href="{% url 'maintenance:maintenance-update' pk=maintenance_detail_list.id %}" class="btn bg-gradient-dark">UPDATE</a>
+                  <a href="{% url 'maintenance:maintenance-delete' pk=maintenance_detail_list.id %}" class="btn bg-gradient-danger">DELETE</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+{% endblock content %}
+
+{% block footer %}
+{% include 'includes/footer_background.html' %}
+{% endblock footer %}
+
